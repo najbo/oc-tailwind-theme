@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Empêche que le composant AlpineJs ne flash avant d'être complètement chargé  */
+[x-cloak] { display: none !important; }

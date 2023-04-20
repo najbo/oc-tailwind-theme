@@ -3,4 +3,18 @@ layout = "default"
 title = "Page par défaut"
 description = "Page par défaut"
 ==
-<div class="font-bold">Hello world</div>
+<div class="pt-12 grid place-items-center">
+    <div class="font-bold">Hello world</div>
+
+    <div x-data="{ show: false }">
+        <button @click="show = !show">Show</button>
+        <h1 class="bg-red-300 py-6" x-cloak x-show="show">Alpine Js is working !</h1>
+    </div>
+    <hr>
+
+    <div x-data>
+        <button @click="alert('Alpine Js is working !')">Click</button>
+    </div>
+
+    <a href="{{ 'livewire'|page }}">Test livewire</a>
+</div>

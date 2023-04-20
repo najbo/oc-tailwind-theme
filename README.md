@@ -12,3 +12,11 @@ Installer les dépendances :
 	`npm run dev (npx mix)`
 ou
 	`npm run watch (npx watch)`
+
+## Option : Installer plugin démo Livewire
+
+Voir pour le détail : https://github.com/rainlab/livewire-plugin
+
+Installer le plugin : `composer require rainlab/livewire-plugin`
+
+Compléter avec les fichiers dans le dossier `app`

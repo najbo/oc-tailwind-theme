@@ -25,14 +25,15 @@ description = "Layout par défaut"
 
         <link rel="stylesheet" href="{{ 'assets/dist/styles.css'|theme }}">
         {% styles %}
-        <script src="{{ 'assets/dist/app.js'|theme }}" defer></script>
+        {{ livewireStyles() }}
 
     </head>
     
     <body>
-        {% page %}
-        
-        {% scripts %}
-        {% framework extras %}
+		{% page %}
+	    
+	    {% scripts %}
+	    {% framework extras %}
+	    {{ livewireScripts() }}
     </body>
 </html>
